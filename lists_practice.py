@@ -88,11 +88,11 @@ list1 = [2,4,6,10,1]
 
 resultant = []
 for i in (list1):
-  total = 0
-  for j in list1:
-    if j >= i:
-      total += j
-  resultant.append(total)
+    total = 0
+    for j in list1:
+        if j >= i:
+            total += j
+        resultant.append(total)
 
 print(resultant)
 
@@ -104,3 +104,15 @@ print(resultant)
 # Output:
 
 # [34, 67, 89]
+
+num1 = [23,45,67,78,89,34]
+num2 = [34,89,55,56,39,67]
+
+result = []
+
+for i in num1:
+    if i in num2:
+        result.append(i)
+
+result.sort()
+print(result)
