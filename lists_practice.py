@@ -70,3 +70,37 @@ for i in list1:
     sum += i
     result.append(sum)
 print(result)
+
+
+# Problem 5: You are given a list of integers. You are asked to make a list by running through elements of the list by adding all elements greater and itself.
+# i.e. Say given list is [2,4,6,10,1] resultant list will be [22,20,10,23].
+
+# For 1st element 2 ->> these are greater (4+6+10) values and 2 itself so on adding becomes 22.
+
+# For 2nd element 4 ->> greater elements are (6, 10) and 4 itself, so on adding 20
+
+# like wise for all other elememts.
+
+# [2,4,6,10,1]-->[22,20,16,10,23]
+
+
+list1 = [2,4,6,10,1]
+
+resultant = []
+for i in (list1):
+  total = 0
+  for j in list1:
+    if j >= i:
+      total += j
+  resultant.append(total)
+
+print(resultant)
+
+# Problem 6: Find list of common unique items from two list. and show in increasing order
+# Input
+
+# num1 = [23,45,67,78,89,34]
+# num2 = [34,89,55,56,39,67]
+# Output:
+
+# [34, 67, 89]
