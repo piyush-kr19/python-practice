@@ -116,3 +116,55 @@ for i in num1:
 
 result.sort()
 print(result)
+
+# Problem 7: Sort a list of alphanumeric strings based on product value of numeric character in it. If in any string there is no numeric character take it's product value as 1.
+# Input:
+
+# ['1ac21', '23fg', '456', '098d','1','kls']
+# Output:
+
+# ['456', '23fg', '1ac21', '1', 'kls', '098d']
+
+l1 = ['1ac21', '23fg', '456', '098d','1','kls']
+
+result = []
+
+for s in l1:
+    product = 1
+
+    for i in s:
+        if i.isdigit():
+            product *= int(i)
+
+    result.append((product,s))
+
+result.sort(reverse = True)
+
+sorted_list = []
+
+for product, s in result:
+    sorted_list.append(s)
+
+print(sorted_list)
+
+# Problem 8: Split String of list on K character.
+
+# Example :
+
+# Input:
+
+# ['CampusX is a channel', 'for data-science', 'aspirants.']
+# Output:
+
+# ['CampusX', 'is', 'a', 'channel', 'for', 'data-science', 'aspirants.']
+
+C = ['CampusX is a channel', 'for data-science', 'aspirants.']
+
+result = []
+
+for i in C:
+    words = (i.split())
+    result.extend(words)
+
+print(result)
+
