@@ -219,4 +219,21 @@ result = list(set(l1) | set(l2))
 
 print(result)
 
+# Problem 12: Write a program that can find the max number of each row of a matrix
+# Example:
+
+# Input:
+
+# [[1,2,3],[4,5,6],[7,8,9]]
+# Output:
+
+# [3,6,9]
+
+l1 = [[1,2,3],[4,5,6],[7,8,9]]
+
+result = []
+for i in l1:
+    result.append(max(i))
+
+print(result)
 
