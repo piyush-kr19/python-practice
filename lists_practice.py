@@ -168,3 +168,24 @@ for i in C:
 
 print(result)
 
+# Problem 9: Convert Character Matrix to single String using string comprehension.
+# Example 1:
+
+# Input:
+
+# [['c', 'a', 'm', 'p', 'u', 's', 'X'], ['i', 's'], ['b', 'e', 's', 't'], ['c', 'h', 'a', 'n', 'n', 'e', 'l']]
+# Output:
+
+# campusX is best channel
+
+C1 = [['c', 'a', 'm', 'p', 'u', 's', 'X'], ['i', 's'], ['b', 'e', 's', 't'], ['c', 'h', 'a', 'n', 'n', 'e', 'l']]
+words = []
+
+for i in C1:
+    words.append(((''.join(i))))
+
+# print(words)
+
+result = ' '.join(words)
+
+print(result)
