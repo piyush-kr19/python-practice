@@ -189,3 +189,34 @@ for i in C1:
 result = ' '.join(words)
 
 print(result)
+
+# Problem 11: Write a program that can perform union operation on 2 lists
+# Example:
+
+# Input:
+
+# [1,2,3,4,5,1]
+# [2,3,5,7,8]
+# Output:
+
+# [1,2,3,4,5,7,8]
+
+# METHOD 1
+list1 = [1,2,3,4,5,1]
+list2 = [2,3,5,7,8]
+list3 = list1 + list2
+result = []
+for i in list3:
+    if i not in result:
+        result.append(i)
+print(result)
+
+# METHOD 2
+l1 = [1,2,3,4,5,1]
+l2 = [2,3,5,7,8]
+
+result = list(set(l1) | set(l2))
+
+print(result)
+
+
