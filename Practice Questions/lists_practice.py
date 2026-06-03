@@ -303,3 +303,5 @@ for i in range(3):
     for j in range(3):
         result.append(matrix[i][j])
 print(result)
+
+# COMPLETED THE PROBLEMS ON LISTS
