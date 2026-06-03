@@ -240,7 +240,6 @@ print(result)
 # Problem 13: Write a list comprehension to print the following matrix
 # [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
-
 matrix = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
 for row in range(3):
@@ -254,7 +253,6 @@ for row in range(3):
 result = [[row*3 + column for column in range(3)] for row in range(3)]
 
 print(result)
-
 
 # Problem 14: Write a list comprehension that can transpose a given matrix
 # matrix = [
@@ -286,4 +284,22 @@ result = [[matrix[j][i] for j in range(3)] for i in range(3)]
 for row in result:
     print(row)
 
+# Problem 15: Write a list comprehension that can flatten a nested list
+# Input
+# matrix = [
+# [1,2,3],
+# [4,5,6],
+# [7,8,9]
+# ]
 
+matrix = [
+[1,2,3],
+[4,5,6],
+[7,8,9]
+]
+
+result = []
+for i in range(3):
+    for j in range(3):
+        result.append(matrix[i][j])
+print(result)
