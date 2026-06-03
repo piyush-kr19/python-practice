@@ -240,7 +240,50 @@ print(result)
 # Problem 13: Write a list comprehension to print the following matrix
 # [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
-l1 =[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
-result = []
+matrix = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
+for row in range(3):
+    temp = []
+
+    for column in range(3):
+        temp.append(row*3 + column)
+
+    print(temp)
+
+result = [[row*3 + column for column in range(3)] for row in range(3)]
+
+print(result)
+
+
+# Problem 14: Write a list comprehension that can transpose a given matrix
+# matrix = [
+# [1,2,3],
+# [4,5,6],
+# [7,8,9]
+# ]
+
+# [1, 4, 7]
+# [2, 5, 8]
+# [3, 6, 9]
+
+matrix = [
+[1,2,3],
+[4,5,6],
+[7,8,9]
+]
+
+# result = []
+# for i in range(3):
+#   transpose = []
+#   for j in range(3):
+#     transpose.append(matrix[j][i])
+#   result.append(transpose)
+# for row in result:
+#     print(row)
+
+result = [[matrix[j][i] for j in range(3)] for i in range(3)]
+for row in result:
+    print(row)
+
 
