@@ -242,13 +242,13 @@ print(result)
 
 matrix = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
-for row in range(3):
-    temp = []
+# for row in range(3):
+#     temp = []
 
-    for column in range(3):
-        temp.append(row*3 + column)
+#     for column in range(3):
+#         temp.append(row*3 + column)
 
-    print(temp)
+#     print(temp)
 
 result = [[row*3 + column for column in range(3)] for row in range(3)]
 
