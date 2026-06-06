@@ -120,3 +120,35 @@ print('Tuple-',t)
 # Output
 
 # ('Manohar', 'B.tech', 'Python', '2022')
+
+n = int(input("Enter no. of records: "))
+
+students = []
+for i in range(1,n+1):
+    print("Enter Details of student-",i)
+
+    Name = input("Enter Student name: ")
+    Study = input("Enter Higher Education: ")
+    Skill = input("Enter Primary Skill: ")
+    Year = input("Enter Year of Graduation: ")
+
+    students.append((Name,Study,Skill,Year))
+
+print("\nEnter Job Role Requirement")
+req_education = input("Enter Higher Education: ")
+req_skill = input("Enter Skill: ")
+req_graduation = input("Enter Year of Graduation: ")
+
+
+found = False
+
+for student in students:
+    if (student[1] == req_education and
+        student[2] == req_skill and
+        student[3] == req_graduation):
+        print(student)
+        found = True
+
+if not found:
+    print("No such Candidate")
+
